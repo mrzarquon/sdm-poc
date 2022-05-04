@@ -10,4 +10,4 @@ RUN curl -J -o sdm.zip -L https://app.strongdm.com/releases/cli/linux && \
 USER gitpod
 
 COPY ./sdm.sh /opt/strongdm/bin/sdm-launcher
-RUN chmox +x /opt/strongdm/bin/sdm-launcher
+RUN chmod +x /opt/strongdm/bin/sdm-launcher
