@@ -1,0 +1,11 @@
+image:
+  file: .gitpod.Dockerfile
+  context: .
+
+tasks:
+  - name: sdm-launcher
+    command: /opt/strongdm/bin/sdm-launcher start
+    openMode: tab-before
+  - name: sdm login
+    command: /opt/strongdm/bin/sdm login
+    openMode: tab-after
